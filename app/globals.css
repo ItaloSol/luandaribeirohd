@@ -24,7 +24,11 @@
   opacity: 0.5;
   background: linear-gradient(rgba(71, 0, 1, 0.85), rgba(71, 0, 1, 0.85));
 }
-
+.icon-heels {
+  width: 2em;
+  height: 2em;
+  fill: currentColor; /* This allows the icon to inherit the text color */
+}
 .section-padding {
   @apply py-16 md:py-24;
 }

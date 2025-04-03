@@ -57,13 +57,14 @@ export default function Teacher() {
               >
                 <iframe
                   src="https://www.instagram.com/p/DG_xETzxWf4/embed"
-                  width="100%"
+                  width="90%"
                   height="100%"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
                   allow="encrypted-media"
-                  className="rounded-lg shadow-xl aspect-[3/4]"
+                  className="rounded-lg shadow-xl"
+                  style={{ aspectRatio: '3 / 4' }}
                 />
               </motion.div>
             </FadeIn>
