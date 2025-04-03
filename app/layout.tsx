@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://luandaribeirohd.web.app'),
+  metadataBase: new URL('https://luandaribeirohd.web.app/'),
   title: 'Luanda Heels – Eleve sua autoestima e confiança com o Heels Dance',
-  description: 'Luanda Heels – Eleve sua autoestima e confiança com o Heels Dance',
+  description: 'Descubra uma nova forma de se expressar e se empoderar através do Heels Dance. Experimente aulas que unem técnica, elegância e autoconfiança, em um ambiente acolhedor e transformador guiado pela experiência de Luanda Ribeiro. Agende sua aula experimental e venha viver essa experiência única!',
   openGraph: {
     title: 'Luanda Heels – Eleve sua autoestima e confiança com o Heels Dance',
     description: 'Descubra uma nova forma de se expressar e se empoderar através do Heels Dance. Experimente aulas que unem técnica, elegância e autoconfiança, em um ambiente acolhedor e transformador guiado pela experiência de Luanda Ribeiro. Agende sua aula experimental e venha viver essa experiência única!',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         alt: 'Luanda Heels – Eleve sua autoestima e confiança com o Heels Dance',
       },
     ],
-    siteName: 'PAITEC',
+    siteName: 'Luanda Heels',
   },
   twitter: {
     card: 'summary_large_image',
