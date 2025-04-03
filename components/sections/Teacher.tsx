@@ -57,7 +57,7 @@ export default function Teacher() {
               >
                 <iframe
                   src="https://www.instagram.com/p/DG_xETzxWf4/embed"
-                  width="90%"
+                  width="100%"
                   height="100%"
                   frameBorder="0"
                   scrolling="no"
