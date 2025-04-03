@@ -6,7 +6,7 @@ import { HeroButton } from "@/components/ui/hero-button";
 export default function Hero() {
   return (
     <section id="Inicio" className="relative min-h-screen flex items-center bg-hero-pattern bg-cover bg-center bg-fixed">
-      <div className="absolute inset-0 hero-gradient"></div>
+      {/* <div className="absolute inset-0 hero-gradient"></div> */}
       <div className="container-custom relative z-10 text-white">
         <div className="max-w-3xl">
           <motion.h1

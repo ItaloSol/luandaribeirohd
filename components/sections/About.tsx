@@ -28,7 +28,7 @@ export default function About() {
               className="relative"
             >
               <img 
-                src="/imagens/luanda_1.webp" 
+                src="/imagens/luanda_4.webp" 
                 alt="Aula de Heels Dance" 
                 className="rounded-lg shadow-xl"
               />

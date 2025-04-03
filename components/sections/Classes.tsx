@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { ChevronRight } from "lucide-react";
+import { CheckSquare } from "lucide-react";
 import { FadeIn, FadeInStagger } from "../animations/FadeIn";
 import { CTAButton } from "@/components/ui/cta-button";
 
@@ -37,7 +37,7 @@ export default function Classes() {
                       whileHover={{ x: 10 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <ChevronRight className="h-4 w-4 md:h-5 md:w-5 text-brand-red mr-2 md:mr-3 flex-shrink-0" />
+                      <CheckSquare className="h-4 w-4 md:h-5 md:w-5 text-brand-red mr-2 md:mr-3 flex-shrink-0" />
                       <span className="text-gray-700 text-sm md:text-base">{item}</span>
                     </motion.li>
                   ))}

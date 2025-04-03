@@ -18,10 +18,11 @@ export default function Choreography() {
       <div className="container-custom relative z-10">
         <FadeIn>
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-4xl font-serif mb-6">Coreografia Exclusiva</h2>
+            <h2 className="text-4xl font-serif mb-6">I Will Survive</h2>
             <p className="text-lg mb-12">
-              Assista à coreografia exclusiva que une técnica, expressão e empoderamento. 
-              Uma amostra do poder transformador do Heels Dance.
+              Este projeto, coreografado e dirigido por Lua Ribeiro para @whimsy.dance, 
+              é uma celebração da resiliência e força através da dança. 
+              Experimente a poderosa expressão artística que transforma e empodera.
             </p>
             
             <motion.div

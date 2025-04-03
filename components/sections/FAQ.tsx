@@ -37,6 +37,18 @@ export default function FAQ() {
                   Os valores variam de acordo com a modalidade escolhida. Entre em contato conosco para conhecer nossos planos e pacotes especiais.
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-4" className="rounded-lg border">
+                <AccordionTrigger className="px-6">Como devo me vestir para a aula?</AccordionTrigger>
+                <AccordionContent className="px-6">
+                  Recomendamos roupas confortáveis que permitam movimento, como leggings e top esportivo. Evite roupas muito largas que possam atrapalhar.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5" className="rounded-lg border">
+                <AccordionTrigger className="px-6">Qual salto ideal para fazer a aula?</AccordionTrigger>
+                <AccordionContent className="px-6">
+                  Para iniciantes, recomendamos saltos entre 5-7cm. Conforme ganha confiança, pode evoluir para saltos mais altos. O importante é se sentir confortável e seguro.
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </motion.div>
         </div>
