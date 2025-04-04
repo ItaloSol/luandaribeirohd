@@ -7,7 +7,7 @@ export default function Footer() {
   const navLinks = ["Inicio", "Sobre", "Aulas", "Coreografia", "FAQ", "Contato"];
 
   return (
-    <footer className="bg-white text-gray-900 py-12 border-t border-gray-100">
+    <footer className="bg-mascara text-gray-900 py-12 border-t border-gray-100">
       <div className="container-custom">
         <FadeIn>
           <div className="grid md:grid-cols-3 gap-8">

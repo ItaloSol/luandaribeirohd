@@ -6,7 +6,7 @@ import { FadeIn } from "../animations/FadeIn";
 
 export default function FAQ() {
   return (
-    <section id="FAQ" className="section-padding bg-white">
+    <section id="FAQ" className="section-padding bg-mascara">
       <div className="container-custom">
         <FadeIn>
           <h2 className="text-4xl font-serif text-center mb-12">Perguntas Frequentes</h2>

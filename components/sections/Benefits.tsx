@@ -31,7 +31,7 @@ export default function Benefits() {
           backgroundImage: "url('/imagens/luanda_1.webp')",
         }}
       />
-      <div className="absolute inset-0 bg-mascara"></div>
+      <div className="absolute inset-0 hero-gradient"></div>
 
       <div className="container-custom relative z-10">
         <motion.h2

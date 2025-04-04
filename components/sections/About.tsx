@@ -6,7 +6,7 @@ import { CTAButton } from "@/components/ui/cta-button";
 
 export default function About() {
   return (
-    <section id="Sobre" className="section-padding bg-white">
+    <section id="Sobre" className="section-padding bg-mascara">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <FadeIn delay={0.2}>
