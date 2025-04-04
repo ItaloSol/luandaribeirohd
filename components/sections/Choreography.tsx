@@ -13,7 +13,7 @@ export default function Choreography() {
           backgroundImage: "url('/imagens/luanda_3.webp')",
         }}
       />
-      <div className="absolute inset-0 hero-gradient"></div>
+      <div className="absolute inset-0 bg-mascara"></div>
 
       <div className="container-custom relative z-10">
         <FadeIn>
