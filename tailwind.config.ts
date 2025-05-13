@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['system-ui', 'sans-serif'],
+        luxurious: ['Luxurious Script', 'cursive'],
       },
       colors: {
         brand: {

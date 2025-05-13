@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FadeIn } from "../animations/FadeIn";
+import { Instagram, Youtube, Phone } from "lucide-react";
 
 export default function Footer() {
   const navLinks = ["Inicio", "Sobre", "Aulas", "Coreografia", "FAQ", "Contato"];
@@ -10,15 +11,47 @@ export default function Footer() {
     <footer className="bg-mascara text-gray-900 py-12 border-t border-gray-100">
       <div className="container-custom">
         <FadeIn>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Logo and Social Media */}
             <div>
-            <img src="/logo.png" alt="Luanda Heels" className="h-12" />
-              <p className="text-gray-600">
+              <img src="/logo.png" alt="Luanda Heels" className="h-12 mb-4" />
+              <p className="text-gray-600 mb-6">
                 Transformando vidas através do Heels Dance
               </p>
+              <div className="flex gap-4">
+                <motion.a
+                  href="https://www.instagram.com/lua.ysr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-brand-red transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <Instagram className="w-6 h-6" />
+                </motion.a>
+                <motion.a
+                  href="https://wa.me/5561981066277"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-brand-red transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <Phone className="w-6 h-6" />
+                </motion.a>
+                <motion.a
+                  href="https://www.youtube.com/watch?v=enMVYygvbwM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-brand-red transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <Youtube className="w-6 h-6" />
+                </motion.a>
+              </div>
             </div>
+
+            {/* Navigation Links */}
             <div>
-              <h3 className="text-xl font-serif mb-4 text-brand-red">Links Úteis</h3>
+              <h3 className="text-xl  mb-4 text-brand-red">Links Úteis</h3>
               <ul className="space-y-2 text-gray-600">
                 {navLinks.map((link, index) => (
                   <motion.li key={index} whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
@@ -32,21 +65,8 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-xl font-serif mb-4 text-brand-red">Horário de Funcionamento</h3>
-              <div className="text-gray-600 space-y-2">
-                <div>
-                  <p className="font-medium text-gray-900">Aulas em Grupo:</p>
-                  <p>Sexta-feira: 19h às 20h30</p>
-                  <p>Local: Muvon Sudoeste</p>
-                </div>
-                <div className="mt-4">
-                  <p className="font-medium text-gray-900">Aulas Particulares:</p>
-                  <p>Horários e locais personalizados</p>
-                </div>
-              </div>
-            </div>
           </div>
+
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

@@ -23,7 +23,7 @@ export default function Teacher() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <FadeIn delay={0.2}>
               <div>
-                <h2 className="text-4xl font-serif mb-6">Sobre a Professora</h2>
+                <h2 className="text-4xl  mb-6">Sobre a Professora</h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
                     Luanda Ribeiro iniciou sua jornada na dança aos seis anos de idade pelo ballet clássico. 

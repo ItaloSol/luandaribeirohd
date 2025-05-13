@@ -1,76 +1,92 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
 import { FadeInStagger } from "../animations/FadeIn";
-import { Sparkles, Brush, Users } from "lucide-react";
+
 export default function Benefits() {
   const benefits = [
     {
-      icon: "sparkles",
-      title: "Empoderamento",
-      description: "Desenvolva confiança e autoestima através da dança"
+      title: "Aula VIP",
+      features: [
+        "Atendimento individual com foco total no seu processo;",
+        "Flexibilidade de horários;",
+        "Inclusão de detalhes premium (para mais detalhes, entre em contato)."
+      ],
+      image: "/imagens/3.jpg",
+      bgColor: "bg-gray-200"
     },
     {
-      icon: "brush",
-      title: "Expressão",
-      description: "Liberte sua feminilidade e criatividade"
-    },
-    {
-      icon: "users",
-      title: "Ambiente Acolhedor",
-      description: "Sinta-se segura para se expressar livremente"
+      title: "Aulas em grupo",
+      features: [
+        "Ambiente acolhedor;",
+        "Ideal para quem busca ter aulas em grupo para socializar;",
+        "Possibilidade de desenvolver projetos em grupo."
+      ],
+      image: "/imagens/4.jpg",
+      bgColor: "bg-brand-red"
     }
   ];
 
   return (
-    <section className="section-padding relative">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ 
-          backgroundImage: "url('/imagens/luanda_1.webp')",
-        }}
-      />
-      <div className="absolute inset-0 hero-gradient"></div>
-
-      <div className="container-custom relative z-10">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-serif text-center mb-12 text-white"
+    <section className="w-full">
+      {benefits.map((benefit, index) => (
+        <div 
+          key={index} 
+          className={`${benefit.bgColor} ${index % 2 === 0 ? 'text-gray-900' : 'text-white'}`}
         >
-          Benefícios das nossas aulas
-        </motion.h2>
-        <FadeInStagger>
-          <div className="grid md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
+          <div className="container-custom py-24 md:py-32">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
-                }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className={index % 2 === 0 
+                  ? "order-2 md:order-1" // Text left, image right (default)
+                  : "order-2 md:order-2"} // Text right, image left
               >
-                <Card className="p-6 transform transition-all duration-300 hover:scale-105 bg-white/90 backdrop-blur-sm">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-brand-red/10 p-3 rounded-full">
-                      {benefit.icon === 'sparkles' && <Sparkles className="h-6 w-6 text-brand-red" />}
-                      {benefit.icon === 'brush' && <Brush className="h-6 w-6 text-brand-red" />}
-                      {benefit.icon === 'users' && <Users className="h-6 w-6 text-brand-red" />}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-serif mb-3">{benefit.title}</h3>
-                      <p className="text-gray-600">{benefit.description}</p>
-                    </div>
+                <h2 className="text-4xl md:text-5xl  mb-12">{benefit.title}</h2>
+                <FadeInStagger>
+                  <div className="space-y-6">
+                    {benefit.features.map((feature, featureIndex) => (
+                      <motion.div
+                        key={featureIndex}
+                        variants={{
+                          hidden: { opacity: 0, x: -20 },
+                          visible: { opacity: 1, x: 0 }
+                        }}
+                        className="flex items-center gap-4"
+                      >
+                        <div className={`text-2xl ${index % 2 === 0 ? 'text-brand-red' : 'text-white'}`}>✦</div>
+                        <p className="text-lg md:text-xl">{feature}</p>
+                      </motion.div>
+                    ))}
                   </div>
-                </Card>
+                </FadeInStagger>
               </motion.div>
-            ))}
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className={index % 2 === 0 
+                  ? "order-1 md:order-2" // Image right for first, left for second, etc.
+                  : "order-1 md:order-1"}
+              >
+                <div className="rounded-lg overflow-hidden shadow-xl">
+                  <img
+                    src={benefit.image}
+                    alt={benefit.title}
+                    className="w-full h-full object-cover"
+                    style={{ aspectRatio: '16/9' }}
+                  />
+                </div>
+              </motion.div>
+            </div>
           </div>
-        </FadeInStagger>
-      </div>
+        </div>
+      ))}
     </section>
   );
 }

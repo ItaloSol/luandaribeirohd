@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Luxurious Script";
+  src: url("/fonte/LuxuriousScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --brand-red: 71 0 1;
@@ -16,7 +22,7 @@
   }
 
   h1, h2, h3, h4, h5 {
-    @apply font-serif;
+    @apply font-luxurious;
   }
 }
 
@@ -24,6 +30,13 @@
   opacity: 0.5;
   background: linear-gradient(rgba(71, 0, 1, 0.85), rgba(71, 0, 1, 0.85));
 }
+
+.luxurious-script-regular {
+  font-family: "Luxurious Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .bg-mascara {
   background-color: #E0E2E6;
 }
@@ -31,8 +44,9 @@
 .icon-heels {
   width: 2em;
   height: 2em;
-  fill: currentColor; /* This allows the icon to inherit the text color */
+  fill: currentColor;
 }
+
 .section-padding {
   @apply py-16 md:py-24;
 }

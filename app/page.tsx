@@ -3,8 +3,8 @@
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
-import Teacher from "@/components/sections/Teacher";
 import Benefits from "@/components/sections/Benefits";
+import Journey from "@/components/sections/Journey";
 import Classes from "@/components/sections/Classes";
 import Choreography from "@/components/sections/Choreography";
 import FAQ from "@/components/sections/FAQ";
@@ -17,10 +17,10 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Teacher />
       <Benefits />
-      <Classes />
-      <Choreography />
+      <Journey />
+      {/* <Classes /> */}
+      {/* <Choreography /> */}
       <FAQ />
       <Contact />
       <Footer />

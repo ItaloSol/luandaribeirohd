@@ -22,13 +22,13 @@ export default function Classes() {
     <section id="Aulas" className="section-padding bg-white">
       <div className="container-custom">
         <FadeIn>
-          <h2 className="text-4xl md:text-4xl text-3xl font-serif text-center mb-8 md:mb-12">Modalidades de Aulas</h2>
+          <h2 className="text-4xl md:text-4xl text-3xl  text-center mb-8 md:mb-12">Modalidades de Aulas</h2>
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-8 md:mb-12">
           {modalidades.map((modalidade, index) => (
             <FadeIn key={index} delay={index * 0.2}>
               <Card className="h-full p-6 md:p-8 transform transition-all duration-300 hover:scale-105 shadow-lg">
-                <h3 className="text-xl md:text-2xl font-serif mb-4 md:mb-6">{modalidade.title}</h3>
+                <h3 className="text-xl md:text-2xl  mb-4 md:mb-6">{modalidade.title}</h3>
                 <ul className="space-y-3 md:space-y-4">
                   {modalidade.items.map((item, itemIndex) => (
                     <motion.li
