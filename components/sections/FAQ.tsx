@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import React, { useState } from "react";
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   const faqs = [
     {
       question: "Preciso ter experiência prévia?",
@@ -29,8 +32,8 @@ export default function FAQ() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/imagens/6.jpg')",
-          filter: "brightness(0.3)"
+          backgroundImage: "url('/imagens/6.webp')",
+          filter: "brightness(0.8)"
         }}
       />
 
@@ -42,7 +45,6 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl  text-center mb-16 text-white"
-          
         >
           Perguntas frequentes
         </motion.h2>
@@ -64,17 +66,12 @@ export default function FAQ() {
                 className="mb-6"
               >
                 <button
-                  className="w-full text-left py-6 px-8 bg-brand-red text-white text-xl md:text-2xl  hover:bg-opacity-90 transition-all duration-300"
-                  onClick={(e) => {
-                    const content = e.currentTarget.nextElementSibling;
-                    if (content) {
-                      content.classList.toggle('hidden');
-                    }
-                  }}
+                  className="w-full text-left py-6 px-8 bg-brand-red text-white text-xl md:text-2xl hover:bg-opacity-90 transition-all duration-300"
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 >
                   {faq.question}
                 </button>
-                <div className="hidden bg-white/10 backdrop-blur-sm text-white p-6 text-lg">
+                <div className={`${openIndex === index ? '' : 'hidden'} bg-white/10 backdrop-blur-sm text-white p-6 text-lg`}>
                   {faq.answer}
                 </div>
               </motion.div>

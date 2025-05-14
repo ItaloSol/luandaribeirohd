@@ -12,7 +12,7 @@ export default function Benefits() {
         "Flexibilidade de horários;",
         "Inclusão de detalhes premium (para mais detalhes, entre em contato)."
       ],
-      image: "/imagens/3.jpg",
+      image: "/imagens/3.webp",
       bgColor: "bg-gray-200"
     },
     {
@@ -22,7 +22,7 @@ export default function Benefits() {
         "Ideal para quem busca ter aulas em grupo para socializar;",
         "Possibilidade de desenvolver projetos em grupo."
       ],
-      image: "/imagens/4.jpg",
+      image: "/imagens/4.webp",
       bgColor: "bg-brand-red"
     }
   ];

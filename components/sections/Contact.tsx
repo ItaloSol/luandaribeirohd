@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FadeIn } from "../animations/FadeIn";
-
+import React from "react";
 export default function Contact() {
   const contactInfo = [
     {
@@ -28,7 +28,7 @@ export default function Contact() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/imagens/7.jpg')",
+          backgroundImage: "url('/imagens/7.webp')",
           filter: "brightness(0.3)"
         }}
       />
@@ -41,10 +41,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl lg:text-7xl  mb-16 text-center"
-          style={{ 
-            
-            fontStyle: "italic"
-          }}
+          style={{ fontStyle: "italic" }}
         >
           Vamos conversar?
         </motion.h2>

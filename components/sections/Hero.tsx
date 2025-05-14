@@ -10,7 +10,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/imagens/1.jpg')",
+          backgroundImage: "url('/imagens/1.webp')",
           filter: "grayscale(100%) brightness(0.7)"
         }}
       />
@@ -56,9 +56,9 @@ export default function Hero() {
             className="flex justify-end mt-8"
           >
             <img 
-              src="/imagens/2.png" 
+              src="/imagens/logo.webp" 
               alt="Luanda Ribeiro" 
-              className="h-12 sm:h-14 md:h-16 object-contain"
+              className="h-36 sm:h-14 md:h-52 object-contain w-auto"
             />
           </motion.div>
         </div>

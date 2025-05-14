@@ -10,7 +10,7 @@ export default function Journey() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/imagens/5.jpg')",
+          backgroundImage: "url('/imagens/5.webp')",
           filter: "brightness(0.3)"
         }}
       />

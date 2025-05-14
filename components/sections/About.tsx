@@ -11,7 +11,7 @@ export default function About() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url('/imagens/2.jpg')",
+          backgroundImage: "url('/imagens/2.webp')",
           filter: "brightness(0.4)" // Darkened for better contrast
         }}
       />
