@@ -30,7 +30,7 @@ export default function Contact() {
         style={{ 
           backgroundImage: "url('/imagens/7.webp')",
           filter: "brightness(0.3)",
-          backgroundPosition: "10% right"
+          backgroundPosition: "right"
         }}
       />
 

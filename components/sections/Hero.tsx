@@ -16,7 +16,7 @@ export default function Hero() {
       />
 
       <div className="container-custom relative z-10 text-white">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 font-light max-w-3xl"
+            className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 font-light max-w-3xl mx-auto"
             style={{ lineHeight: "1.6" }}
           >
             Experiências exclusivas de dança no salto alto para mulheres que desejam mais que passos: desejam presença, autoconfiança e beleza em movimento.
