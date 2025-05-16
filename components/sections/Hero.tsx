@@ -6,16 +6,15 @@ import { HeroButton } from "@/components/ui/hero-button";
 export default function Hero() {
   return (
     <section id="Inicio" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-left md:bg-center parallax"
         style={{ 
-          backgroundImage: "url('/imagens/1.webp')",
-          filter: "grayscale(100%) brightness(0.7)"
+          backgroundImage: "url('/imagens/2.webp')",
+          filter: "grayscale(100%) brightness(0.7)",
+          backgroundPosition: "26% center"
         }}
       />
 
-      {/* Content */}
       <div className="container-custom relative z-10 text-white">
         <div className="max-w-4xl">
           <motion.h1
@@ -24,7 +23,6 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl  mb-8 italic"
             style={{ 
-              
               lineHeight: "1.2"
             }}
           >

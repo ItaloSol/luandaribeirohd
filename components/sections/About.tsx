@@ -7,19 +7,17 @@ import { CTAButton } from "@/components/ui/cta-button";
 export default function About() {
   return (
     <section id="Sobre" className="relative min-h-screen flex items-center py-16 md:py-0">
-      {/* Background Image with darker overlay for better contrast */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center parallax"
         style={{ 
-          backgroundImage: "url('/imagens/2.webp')",
-          filter: "brightness(0.4)" // Darkened for better contrast
+          backgroundImage: "url('/imagens/luanda_5.webp')",
+          filter: "brightness(0.4)",
+          backgroundPosition: "center top"
         }}
       />
 
-      {/* Content */}
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 text-white max-w-5xl mx-auto px-4 sm:px-6">
-          {/* Empty first column for spacing on desktop */}
           <div className="hidden md:block" />
           <div className="col-start-1 md:col-start-2">
             <FadeIn delay={0.2}>

@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import { FadeIn } from "../animations/FadeIn";
 import React from "react";
+
 export default function Contact() {
   const contactInfo = [
     {
       icon: "whatsapp",
       text: "61 98106-6277",
-      href: "https://wa.me/5561981066277"
+      href: "https://api.whatsapp.com/send/?phone=5561981066277&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Aula+de+Heels+Dance.&type=phone_number&app_absent=0"
     },
     {
       icon: "email",
@@ -24,16 +25,15 @@ export default function Contact() {
 
   return (
     <section id="Contato" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center parallax"
         style={{ 
           backgroundImage: "url('/imagens/7.webp')",
-          filter: "brightness(0.3)"
+          filter: "brightness(0.3)",
+          backgroundPosition: "10% right"
         }}
       />
 
-      {/* Content */}
       <div className="container-custom relative z-10 text-white">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function Contact() {
                   href={info.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-6 text-xl md:text-2xl hover:text-brand-red transition-colors duration-300"
+                  className="flex items-center gap-6 text-xl md:text-2xl transition-colors duration-300"
                   whileHover={{ x: 10 }}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -91,7 +91,7 @@ export default function Contact() {
             className="mt-16 text-center"
           >
             <a
-              href="https://wa.me/5561981066277"
+              href="https://api.whatsapp.com/send/?phone=5561981066277&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Aula+de+Heels+Dance.&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-xl border-2 border-white rounded-full px-8 py-4 hover:bg-white hover:text-brand-red transition-all duration-300"

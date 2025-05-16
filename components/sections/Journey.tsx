@@ -1,21 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CTAButton } from "@/components/ui/cta-button";
 
 export default function Journey() {
   return (
     <section className="relative min-h-screen flex items-center">
-      {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center parallax"
         style={{ 
           backgroundImage: "url('/imagens/5.webp')",
-          filter: "brightness(0.3)"
+          filter: "brightness(0.3)",
+          backgroundPosition: "left"
         }}
       />
 
-      {/* Content */}
       <div className="container-custom relative z-10 text-center text-white">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +22,6 @@ export default function Journey() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl lg:text-7xl  mb-8"
           style={{ 
-            
             fontStyle: "italic"
           }}
         >
@@ -49,7 +46,7 @@ export default function Journey() {
           className="inline-block"
         >
           <button
-            onClick={() => window.location.href = "#contato"}
+            onClick={() => window.open("https://api.whatsapp.com/send/?phone=5561981066277&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+Aula+de+Heels+Dance.&type=phone_number&app_absent=0", "_blank")}
             className="flex items-center justify-center gap-3 text-xl border-2 border-white rounded-full px-8 py-4 hover:bg-white hover:text-brand-red transition-all duration-300"
           >
             <svg

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import React, { useState } from "react";
 
 export default function FAQ() {
@@ -28,16 +27,15 @@ export default function FAQ() {
 
   return (
     <section id="FAQ" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center parallax"
         style={{ 
           backgroundImage: "url('/imagens/6.webp')",
-          filter: "brightness(0.8)"
+          filter: "brightness(0.8)",
+           backgroundPosition: "right"
         }}
       />
 
-      {/* Content */}
       <div className="container-custom relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

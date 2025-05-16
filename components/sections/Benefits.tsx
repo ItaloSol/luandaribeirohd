@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import { FadeInStagger } from "../animations/FadeIn";
 
 export default function Benefits() {
+  const whatsappNumber = "5561981066277";
+  const benefitMessages = [
+    encodeURIComponent("Olá! Gostaria de agendar uma Aula VIP de Heels Dance."),
+    encodeURIComponent("Olá! Gostaria de agendar uma Aula em Grupo de Heels Dance.")
+  ];
   const benefits = [
     {
       title: "Aula VIP",
@@ -42,8 +47,8 @@ export default function Benefits() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 className={index % 2 === 0 
-                  ? "order-2 md:order-1" // Text left, image right (default)
-                  : "order-2 md:order-2"} // Text right, image left
+                  ? "order-2 md:order-1"
+                  : "order-2 md:order-2"}
               >
                 <h2 className="text-4xl md:text-5xl  mb-12">{benefit.title}</h2>
                 <FadeInStagger>
@@ -63,6 +68,22 @@ export default function Benefits() {
                     ))}
                   </div>
                 </FadeInStagger>
+                <div className="py-6 flex justify-center">
+                  <a
+                    href={`https://wa.me/${whatsappNumber}?text=${benefitMessages[index]}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`mt-10 inline-block px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 ${
+                      index % 2 === 0
+                        ? "bg-brand-red text-white hover:bg-brand-red/90"
+                        : "bg-white text-brand-red hover:bg-white/90"
+                    }`}
+                  >
+                    {benefit.title === "Aula VIP"
+                      ? "Agendar Aula VIP"
+                      : "Agendar Aula em Grupo"}
+                  </a>
+                </div>
               </motion.div>
               
               <motion.div
@@ -71,7 +92,7 @@ export default function Benefits() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 className={index % 2 === 0 
-                  ? "order-1 md:order-2" // Image right for first, left for second, etc.
+                  ? "order-1 md:order-2"
                   : "order-1 md:order-1"}
               >
                 <div className="rounded-lg overflow-hidden shadow-xl">
