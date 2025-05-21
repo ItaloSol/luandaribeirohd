@@ -10,7 +10,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-left md:bg-center parallax"
         style={{ 
           backgroundImage: "url('/imagens/2.webp')",
-          filter: "grayscale(100%) brightness(0.7)",
+          filter: "brightness(0.7)",
           backgroundPosition: "26% center"
         }}
       />
@@ -45,19 +45,6 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <HeroButton />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="flex justify-end mt-8"
-          >
-            <img 
-              src="/imagens/logo.webp" 
-              alt="Luanda Ribeiro" 
-              className="h-36 sm:h-14 md:h-52 object-contain w-auto"
-            />
           </motion.div>
         </div>
       </div>
