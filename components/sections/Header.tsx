@@ -49,14 +49,14 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="hidden md:flex gap-8 font-medium"
           >
-            {["Inicio", "Sobre", "Aulas", "Coreografia", "FAQ", "Contato"].map((item, index) => (
+            {["Inicio", "Sobre", "Aulas", "FAQ", "Contato"].map((item, index) => (
               <motion.a
                 key={item}
                 href={`#${item}`}
                 whileHover={{ scale: 1.05, color: "#470001" }}
                 transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
                 className={`transition-colors ${
-                  isScrolled ? 'text-gray-900 hover:text-brand-red' : 'text-white hover:text-white/80'
+                  isScrolled ? 'text-gray-900 hover:text-brand-red' : 'hidden'
                 }`}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -77,7 +77,7 @@ export default function Header() {
             }`}
           >
             <div className="container-custom py-4">
-              {["Inicio", "Sobre", "Aulas", "Coreografia", "FAQ", "Contato"].map((item, index) => (
+              {["Inicio", "Sobre", "Aulas", "FAQ", "Contato"].map((item, index) => (
                 <motion.a
                   key={item}
                   href={`#${item}`}

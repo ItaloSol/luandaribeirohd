@@ -19,9 +19,6 @@ export default function About() {
                   Com formação técnica, experiência cênica e olhar apurado para o bem-estar feminino, Luanda desenvolveu uma abordagem que valoriza a técnica, a elegância e a expressividade feminina.
                 </p>
                 <p>
-                  Além de sua experiência no ballet e no Heels, já participou de eventos, competições e apresentações de diversos estilos, incluindo k-pop e tango, o que contribuiu para sua versatilidade e presença.
-                </p>
-                <p>
                   Hoje, como professora de Heels Dance, busca inspirar e transformar outras mulheres através da dança, mostrando que essa arte vai além dos movimentos: é uma ferramenta poderosa de expressão, autoestima e autoconfiança.
                 </p>
               </div>

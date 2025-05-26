@@ -33,7 +33,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="w-full">
+    <section id="Aulas" className="w-full">
       {benefits.map((benefit, index) => (
         <div 
           key={index} 
@@ -50,7 +50,7 @@ export default function Benefits() {
                   ? "order-2 md:order-1"
                   : "order-2 md:order-2"}
               >
-                <h2 className="text-4xl md:text-5xl  mb-12">{benefit.title}</h2>
+                <h2 className="text-4xl font-serif md:text-5xl  mb-12">{benefit.title}</h2>
                 <FadeInStagger>
                   <div className="space-y-6">
                     {benefit.features.map((feature, featureIndex) => (

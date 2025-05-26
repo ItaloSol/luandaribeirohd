@@ -5,7 +5,7 @@ import { FadeIn } from "../animations/FadeIn";
 import { Instagram, Youtube, Phone } from "lucide-react";
 
 export default function Footer() {
-  const navLinks = ["Inicio", "Sobre", "Aulas", "Coreografia", "FAQ", "Contato"];
+  const navLinks = ["Inicio", "Sobre", "Aulas", "FAQ", "Contato"];
 
   return (
     <footer className="bg-mascara text-gray-900 py-12 border-t border-gray-100">
